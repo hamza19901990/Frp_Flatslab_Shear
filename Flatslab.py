@@ -54,9 +54,9 @@ def get_input_features():
         'bo_mm': bo_mm,
         'bo_1_5_mm': bo_1_5_mm,
         'de': de,
-        'fc_MPa': fc_Mpa,
+        'fc_Mpa': fc_Mpa,
         'p_percent': p_percent,
-        'Er_GPa': Er_Gpa
+        'Er_Gpa': Er_Gpa
     }
     
     features = pd.DataFrame(data_user, index=[0])
