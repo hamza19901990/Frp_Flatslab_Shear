@@ -51,22 +51,21 @@ model = GradientBoostingRegressor(learning_rate=0.5, n_estimators=100)
 model.fit(X_train, y_train)
 st.sidebar.header('Specify Input Parameters')
 def get_input_features():
-    A_cm2 = st.sidebar.slider('A(cm2)', 6.25,1587.50,671.10)
-    bo_(mm) = st.sidebar.slider('b0,0.5de(mm)',280.00,2470.00,1496.90)
-    bo_1.5(mm) = st.sidebar.slider('b0,1.5de(mm)', 640.00,4608.00,2509.18)
-    fc(MPa) = st.sidebar.slider('fc(MPa)', 22.16,179.00,44.72)
-    p(%)  = st.sidebar.slider('p(%)', 0.13,3.76,0.94)
-    Er(GPa)  = st.sidebar.slider('Er(GPa)', 28.40,230.00,74.44)
+    A_cm2 = st.sidebar.slider('A(cm2)', 6.25, 1587.50, 671.10)
+    bo_mm = st.sidebar.slider('b0,0.5de(mm)', 280.00, 2470.00, 1496.90)
+    bo_1_5_mm = st.sidebar.slider('b0,1.5de(mm)', 640.00, 4608.00, 2509.18)
+    fc_MPa = st.sidebar.slider('fc(MPa)', 22.16, 179.00, 44.72)
+    p_percent = st.sidebar.slider('p(%)', 0.13, 3.76, 0.94)
+    Er_GPa = st.sidebar.slider('Er(GPa)', 28.40, 230.00, 74.44)
 
-
-
-
-    data_user = {'A(cm2)': A_cm2,
-            'b0,0.5de(mm)': bo_(mm),
-            'b0,1.5de(mm)': bo_1.5(mm),
-            'fc(MPa)': fc(MPa),
-            'p(%)': p(%),
-            'Er(GPa)': Er(GPa),
+    return {
+        'A_cm2': A_cm2,
+        'bo_mm': bo_mm,
+        'bo_1_5_mm': bo_1_5_mm,
+        'fc_MPa': fc_MPa,
+        'p_percent': p_percent,
+        'Er_GPa': Er_GPa
+    
 
 
     }
