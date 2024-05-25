@@ -52,7 +52,7 @@ model.fit(X_train, y_train)
 st.sidebar.header('Specify Input Parameters')
 def get_input_features():
     A(cm2) = st.sidebar.slider('A(cm2)', 6.25,1587.50,671.10)
-    b0,0.5de(mm) = st.sidebar.slider('b0,0.5de(mm)',280.00,2470.00,1496.90)
+    "b0,0.5de(mm)" = st.sidebar.slider('b0,0.5de(mm)',280.00,2470.00,1496.90)
     b0,1.5de(mm) = st.sidebar.slider('b0,1.5de(mm)', 640.00,4608.00,2509.18)
     fc(MPa) = st.sidebar.slider('fc(MPa)', 22.16,179.00,44.72)
     p(%)  = st.sidebar.slider('p(%)', 0.13,3.76,0.94)
