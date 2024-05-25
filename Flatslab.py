@@ -74,9 +74,6 @@ load_clf = pickle.load(open('flat_punching (1).pkl', 'rb'))
 
 st.header('Prediction of Vu (kN)')
 # Apply model to make predictions
-
-    prediction = load_clf.predict(df)
-    st.write(prediction)
-
-
-st.write('---')
+prediction = load_clf.predict(df)
+st.write(prediction)
+st.write('---') 
