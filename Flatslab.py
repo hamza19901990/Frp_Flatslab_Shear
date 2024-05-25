@@ -46,8 +46,8 @@ def get_input_features():
     bo_1_5_mm = st.sidebar.slider('bo_1_5_mm', 640.00, 4608.00, 2509.18)
     de = st.sidebar.slider('de', 36.00, 284.00, 127.89)
     fc_MPa = st.sidebar.slider('fc_MPa', 22.16, 179.00, 44.72)
-    p_percent = st.sidebar.slider('p(%)', 0.13, 3.76, 0.94)
-    Er_GPa = st.sidebar.slider('Er(GPa)', 28.40, 230.00, 74.44)
+    p_percent = st.sidebar.slider('p_percent', 0.13, 3.76, 0.94)
+    Er_GPa = st.sidebar.slider('Er_GPa', 28.40, 230.00, 74.44)
     
     data_user = {
         'A_cm2': A_cm2,
