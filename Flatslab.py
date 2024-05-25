@@ -70,7 +70,7 @@ st.write(df)
 st.write('---')
 
 # Reads in saved classification model
-load_clf = pickle.load(open('flat_punching (1).pkl', 'rb'))
+load_clf = pickle.load(open('new.pkl', 'rb'))
 
 st.header('Prediction of Vu (kN)')
 # Apply model to make predictions
