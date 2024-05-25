@@ -74,6 +74,10 @@ load_clf = pickle.load(open('flat_punching (1).pkl', 'rb'))
 
 st.header('Prediction of Vu (kN)')
 # Apply model to make predictions
-prediction = load_clf.predict(df)
-st.write(prediction)
+try:
+    prediction = load_clf.predict(df)
+    st.write(prediction)
+except ValueError as e:
+    st.error(f"Error in prediction: {e}")
+
 st.write('---')
