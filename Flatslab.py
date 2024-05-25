@@ -54,7 +54,7 @@ def get_input_features():
     A_cm2 = st.sidebar.slider('A_cm2', 6.25, 1587.50, 671.10)
     bo_mm = st.sidebar.slider('bo_mm', 280.00, 2470.00, 1496.90)
     bo_1_5_mm = st.sidebar.slider('bo_1_5_mm', 640.00, 4608.00, 2509.18)
-    de=st.sidebar.slider('de_mm', 36.00, 284.00, 127.89)
+    de=st.sidebar.slider('de', 36.00, 284.00, 127.89)
     fc_MPa = st.sidebar.slider('fc_MPa', 22.16, 179.00, 44.72)
     p_percent = st.sidebar.slider('p(%)', 0.13, 3.76, 0.94)
     Er_GPa = st.sidebar.slider('Er(GPa)', 28.40, 230.00, 74.44)
