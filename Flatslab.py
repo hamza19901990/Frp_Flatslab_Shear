@@ -15,7 +15,7 @@ st.write("""
 This app predicts the **Ultimate Shear Capacity of Fiber Reinforced Polymer Flat Slab Shear **!
 """)
 st.write('---')
-image=Image.open(r'Flatslab.png')
+image=Image.open(r'soil.png')
 st.image(image, use_column_width=True)
 
 data = pd.read_csv(r"finalequtionsmars.csv")
