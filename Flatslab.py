@@ -62,8 +62,8 @@ def get_input_features():
 
 
     data_user = {'A(cm2)': A(cm2),
-            'b0,0.5de(mm)': b0,0.5de(mm),
-            'b0,1.5de(mm)': b0,1.5de(mm),
+            'b0,0.5de(mm)': "b0,0.5de(mm)",
+            'b0,1.5de(mm)': "b0,1.5de(mm)",
             'fc(MPa)': fc(MPa),
             'p(%)': p(%),
             'Er(GPa)': Er(GPa),
