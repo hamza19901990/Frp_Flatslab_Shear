@@ -62,7 +62,7 @@ def get_input_features():
         'A_cm2': A_cm2,
         'bo_mm': bo_mm,
         'bo_1_5_mm': bo_1_5_mm,
-        "de_mm"=de,
+        "de"=de,
         'fc_MPa': fc_MPa,
         'p_percent': p_percent,
         'Er_GPa': Er_GPa
